@@ -4,82 +4,82 @@
 # Install packages after installing base Debian with no GUI
 
 # Install nala for better apt ui
-sudo apt install nala
+#sudo apt install nala
 
 # xorg display server installation
-sudo nala install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev
+sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
-sudo nala install -y python3-pip 
+sudo apt install -y python3-pip 
 
 # Microcode for Intel/AMD 
-# sudo nala install -y amd64-microcode
-sudo nala install -y intel-microcode 
+# sudo apt install -y amd64-microcode
+sudo apt install -y intel-microcode 
 
 # Network Manager
-sudo nala install -y network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome
+sudo apt install -y network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome
 
 # Installation for Appearance management
-sudo nala install -y lxappearance 
+sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo nala install -y thunar xfce4-settings xfce4-power-manager xfce4-terminal
+sudo apt install -y thunar xfce4-settings xfce4-power-manager xfce4-terminal
 
 # Network File Tools/System Events
-sudo nala install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
+sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends wget
 
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
 # Terminal (eg. terminator,kitty,xfce4-terminal,tilix)
-sudo nala install -y kitty
+sudo apt install -y kitty
 
 # Sound packages
-sudo nala install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
 
 # Neofetch/HTOP
-sudo nala install -y neofetch htop
+sudo apt install -y neofetch htop
 
 # EXA installation
 # replace ls command in .bashrc file with line below
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
-#sudo nala install -y exa
+#sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
-#sudo nala install -y cups
-#sudo nala install -y bluez blueman
+#sudo apt install -y cups
+#sudo apt install -y bluez blueman
 
 #sudo systemctl enable bluetooth
 #sudo systemctl enable cups
 
 # Browser Installation (eg. chromium)
-#sudo nala install -y firefox-esr 
+#sudo apt install -y firefox-esr 
 
 # Desktop background browser/handler 
 # feh --bg-fill /path/to/directory 
 # example if you want to use in autostart.sh for i3-gaps
-sudo nala install -y nitrogen 
-#sudo nala install -y feh
+sudo apt install -y nitrogen 
+#sudo apt install -y feh
 
 # Packages needed i3-gaps after installation
-sudo nala install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
+sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
-#sudo nala install -y micro
-# sudo nala install -y neovim
+#sudo apt install -y micro
+# sudo apt install -y neovim
 
 # Install fonts
-sudo nala install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus -y
+sudo apt install -y fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 #fonts-cascadia-code
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
 # Install i3 gaps
-sudo nala install i3 -y
+sudo apt install -y i3
 
 # Dependencies for Ly Console Manager
-sudo nala install -y libpam0g-dev libxcb-xkb-dev git
+sudo apt install -y libpam0g-dev libxcb-xkb-dev git
 
 # Install Ly Console Display Manager
 git clone --recurse-submodules https://github.com/fairyglade/ly
@@ -91,7 +91,7 @@ cd ..
 
 # Lightdm can be used instead of Ly (more common)
 # comment out all ly console display if choosing lightdm
-# sudo nala install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+# sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 # sudo systemctl enable lightdm
 
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
@@ -101,6 +101,6 @@ cd ..
 ./copyconf.sh
 ./nerdfonts.sh
 
-sudo nala autoremove
+sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
