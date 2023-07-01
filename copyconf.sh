@@ -3,13 +3,11 @@
 
 # Using bumblebee-status instead of polybar or i3status (installed for initial login)
 # https://bumblebee-status.readthedocs.io/en/main/index.html
-pip install --user bumblebee-status
+pip install --user --break-system-packages bumblebee-status
+pip install --user --break-system-packages autotiling
 
 # Package needed for bumblebee-status if using apt module - currently configured is i3gaps config file.
 sudo apt install -y aptitude
-
-cd
-cd i3gaps-debian
 
 cp -r .config/backgrounds/ ~/.config
 cp -r .config/bumblebee-status/ ~/.config
