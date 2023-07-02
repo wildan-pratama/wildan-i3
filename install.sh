@@ -78,6 +78,8 @@ sudo apt install -y fonts-font-awesome fonts-powerline fonts-ubuntu fonts-libera
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
+# Music player
+sudo apt install -y mpd ncmpcpp ffmpeg
 # Dependencies for Ly Console Manager
 sudo apt install -y libpam0g-dev libxcb-xkb-dev git
 
