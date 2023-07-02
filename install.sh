@@ -79,7 +79,7 @@ sudo apt install -y fonts-font-awesome fonts-powerline fonts-ubuntu fonts-libera
 xdg-user-dirs-update
 
 # Music player
-sudo apt install -y mpd ncmpcpp ffmpeg
+sudo apt install -y mpd ncmpcpp ffmpeg mpc jq
 
 # Dependencies for Ly Console Manager
 sudo apt install -y libpam0g-dev libxcb-xkb-dev git
