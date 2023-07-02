@@ -97,7 +97,7 @@ cd ..
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
 ## Configuration uses 
 
-# Install Themes
+# Install GTK Themes
 git clone https://github.com/wildan-pratama/archcraft-themes.git
 cd archcraft-themes
 ./install.sh
