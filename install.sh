@@ -105,6 +105,7 @@ cd ..
 
 # Install Network Manager dmenu
 sudo apt install -y python3-gi python3-gi-cairo gir1.2-gtk-4.0 libnm-dev
+mkdir -p $HOME/.local/bin/
 git clone https://github.com/firecat53/networkmanager-dmenu.git
 cp ./networkmanager-dmenu/networkmanager_dmenu $HOME/.local/bin/
 chmod +x $HOME/.local/bin/networkmanager_dmenu
