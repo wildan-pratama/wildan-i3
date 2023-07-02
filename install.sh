@@ -7,7 +7,7 @@
 #sudo apt install nala
 
 # xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev
+sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev light
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
 sudo apt install -y python3-pip 
@@ -38,7 +38,7 @@ sudo apt install -y kitty
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
 
 # Neofetch/HTOP
-sudo apt install -y neofetch htop
+sudo apt install -y neofetch btop
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -61,8 +61,11 @@ sudo apt install -y neofetch htop
 sudo apt install -y nitrogen 
 #sudo apt install -y feh
 
+# Install i3 gaps and bar
+sudo apt install -y i3
+
 # Packages needed i3-gaps after installation
-sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
+sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan polybar
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 #sudo apt install -y micro
@@ -74,9 +77,6 @@ sudo apt install -y fonts-font-awesome fonts-powerline fonts-ubuntu fonts-libera
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
-
-# Install i3 gaps
-sudo apt install -y i3
 
 # Dependencies for Ly Console Manager
 sudo apt install -y libpam0g-dev libxcb-xkb-dev git
@@ -96,6 +96,13 @@ cd ..
 
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
 ## Configuration uses 
+
+# Install Themes
+git clone https://github.com/wildan-pratama/archcraft-themes.git
+cd archcraft-themes
+./install.sh
+cd ..
+
 
 
 ./copyconf.sh
