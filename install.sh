@@ -80,6 +80,7 @@ xdg-user-dirs-update
 
 # Music player
 sudo apt install -y mpd ncmpcpp ffmpeg
+
 # Dependencies for Ly Console Manager
 sudo apt install -y libpam0g-dev libxcb-xkb-dev git
 
