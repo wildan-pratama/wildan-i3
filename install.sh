@@ -7,7 +7,7 @@
 #sudo apt install nala
 
 # xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev light
+sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev light xsettingsd
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
 sudo apt install -y python3-pip 
