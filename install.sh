@@ -23,7 +23,7 @@ sudo apt install -y network-manager-gnome network-manager-openvpn network-manage
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar xfce4-settings xfce4-power-manager xfce4-terminal
+sudo apt install -y thunar xfce4-settings xfce4-power-manager
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends wget
