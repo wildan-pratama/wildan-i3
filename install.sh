@@ -65,7 +65,7 @@ sudo apt install -y nitrogen
 sudo apt install -y i3
 
 # Packages needed i3-gaps after installation
-sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan polybar
+sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan polybar xclip
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 #sudo apt install -y micro
